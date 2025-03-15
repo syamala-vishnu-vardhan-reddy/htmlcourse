@@ -1,0 +1,2358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYASWANTH FINAL</title>
+    <link rel="stylesheet" href="style1.css">
+     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="ME VILLAGE.jpg" style="border-radius: 50%; width: 200px;">
+
+<style>
+      body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            background: linear-gradient(to right, #2980b9, #6dd5fa);
+            overflow: hidden;
+            display: flex;
+            justify-content: left;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            font-weight: 500;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #e0f7fa;
+        }
+
+        .menu-btn {
+            background-color: #34495e;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-right: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .menu-btn:hover {
+            background-color: #2c3e50;
+        }
+
+        .sidenavbar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 101;
+            top: 50px;
+            left: 0;
+            background: linear-gradient(to bottom, #247dd5, #5ac844);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            box-shadow: 2px 0 5px rgba(221, 52, 52, 0.3);
+            overflow-y: auto;
+            display: flex; /* use flexbox */
+            flex-direction: column; /* stack items vertically */
+             height: calc(100vh - 110px);
+        }
+
+        .sidenavbar a {
+            padding: 12px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #ecf0f1;
+            display: block;
+            transition: 0.3s;
+            border-bottom: 1px solid rgba(159, 77, 221, 0.1);
+        }
+
+        .sidenavbar a:hover {
+            background-color: rgba(182, 25, 119, 0.1);
+            color: #fff;
+        }
+
+        .sidenavbar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .sidenavbar .closebtn:hover {
+            color: #bbb;
+        }
+
+        .sidenavbar i {
+            margin-right: 10px;
+            color: #95a5a6;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar a {
+                font-size: 14px;
+                padding: 10px 12px;
+            }
+        }
+</style>
+</head>
+<body><div class="navbar">
+      <a href="javascript:void(0)" class="menu-btn" onclick="openNav()">☰</a>
+    <a href="#head">Heading</a>
+    <a href="#para">Paragraph tag</a>
+    <a href="#yt">YouTube</a>
+    <a href="#map">Map</a>
+    <a href="#pre">Pre tag</a>
+    <a href="#mar">Marquee</a>
+    <a href="#link">Link</a>
+    <a href="#list">List</a>
+    <a href="#fq">Formating & Quotation</a>
+    <a href="#table">Table</a>
+    <a href="#color">Colors</a>
+    <a href="#pic">Picture</a>
+    <a href="#bg">BackGround Image</a>
+    <a href="#tags">Html Tags</a>
+    <a href="#form">Forms</a>
+    <a href="#es">Entities & Symbols</a>
+    <a href="#emo">Emojies</a>
+    <a href="#frame">Iframes</a>
+
+    <a href="#audio">Audio Tag</a>
+    <a href="#video">Video Tag</a>
+    <a href="#svg">SVG</a>
+    <a href="#canva">Canvas</a>
+</div>
+
+    <div id="Sidenavbar" class="sidenavbar">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#head"><i class="fas fa-heading"></i> Heading</h5>
+    </a>
+    <a href="#para"><i class="fas fa-paragraph"></i> Para
+    </a>
+    <a href="#yt"><i class="fab fa-youtube icon"></i> YouTube
+    </a>
+    <a href="#map"><i class="fas fa-map icon"></i> Map</a>
+    <a href="#pre"><i class="fas fa-code icon"></i> Pre tag</a>
+    <a href="#mar"><i class="fas fa-arrows-alt-h icon"></i> Marquee</a>
+    <a href="#link"><i class="fas fa-link icon"></i> Link</a>
+    <a href="#list"><i class="fas fa-list icon"></i> List</a>
+    <a href="#fq"><i class="fas fa-text-width icon"></i> Formating & Quotation</a>
+    <a href="#table"><i class="fas fa-table icon"> Table</i></a>
+    <a href="#color"> <i class="fas fa-palette icon"></i> Colors</a>
+    <a href="#pic"> <i class="fas fa-image icon"></i> Picture</a>
+    <a href="#bg"><i class="fas fa-images icon"></i> BackGround Image</a>
+    <a href="#tags"> <i class="fas fa-code icon"></i> Html tags</a>
+    <a href="#form"> <i class="fas fa-file-alt icon"></i> Forms</a>
+    <a href="#es"><i class="fas fa-check icon"></i>Entities & Symbols</a>
+    <a href="#emo"><i class="fas fa-smile icon"></i>  Emojies</a>
+    <a href="#frame"><i class="fas fa-file icon"></i>Iframes</a>
+
+    <a href="#audio"><i class="fas fa-music icon"></i>   Audio Tag</a>
+    <a href="#video"><i class="fas fa-video icon"></i>  Video Tag</a>
+    <a href="#svg"> <i class="fas fa-vector-square icon"></i> SVG</a>
+    <a href="#canva"><i class="fas fa-draw-polygon icon"></i> Canvas</a>
+   
+  <script>
+            function openNav() {
+                document.getElementById("Sidenavbar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("Sidenavbar").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+
+</div>
+<!-- ----------------HEADING TAG---------------- -->
+
+<h2 style="text-decoration: none; 
+           color: #FFD700; 
+           font-size: 2.5em; 
+           margin-top: 80px; 
+           padding: 25px; 
+           background: linear-gradient(135deg, #1E90FF, #800080); 
+           border-radius: 10px; 
+           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+           font-family: 'Georgia', serif;
+           text-align: center;
+           letter-spacing: 1px; 
+           border: 2px solid #FFA500; "
+    id="head">Heading Tag</h2>
+<div class="containerh">
+    <div class="box">
+        <h1><center> H1 TAG</center></h1>
+        <hr>
+        <h1>Key Feature: Main Title</h1>
+        <p>Used for the most important heading on a page, typically the page title.</p>
+        <p>SEO Significance: Crucial for search engine optimization, indicating the page's primary topic.</p>
+    </div>
+    <div class="box">
+        <h2><center> H2 TAG</center></h2>
+        <hr>
+        <h2>Key Feature: Section Headings</h2>
+        <p>Used for major sections within a page, breaking content into logical parts.</p>
+        <p>Accessibility: Helps users with screen readers understand the page structure.</p>
+    </div>
+    <div class="box">
+        <h3><center>H3 TAG</center></h3>
+        <hr>
+        <h3>Key Feature: Subsections</h3>
+        <p>Used for subsections within H2 sections, further organizing content.</p>
+        <p>Readability: Improves the flow and readability of longer content.</p>
+    </div>
+</div>
+<div class="containerh">
+    <div class="box">
+        <h4><center>H4 TAG</center></h4>
+        <hr>
+        <h4>Key Feature: Minor Headings</h4>
+        <p>Used for less important headings, providing additional levels of detail.</p>
+        <p>Structure: Helps maintain a clear hierarchical structure on the page.</p>
+    </div>
+    <div class="box">
+        <h5><center>H5 TAG</center></h5>
+        <hr>
+        <h5>Key Feature: Supporting Information</h5>
+        <p>Used for small headings, often in sidebars or footers.</p>
+        <p>Consistency: Ensures consistent styling for minor headings across the site.</p>
+    </div>
+    <div class="box">
+        <h6><center>H6 TAG</center></h6>
+        <hr>
+        <h6>Key Feature: Least Important Heading</h6>
+        <p>Used for the least important headings, typically for very specific details.</p>
+        <p>Niche Use: Rarely used in main content but useful for specific layout needs.</p>
+    </div>
+</div>
+<style>
+    .containerh {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin: 20px;
+        gap: 20px;
+        justify-content: center;
+    }
+    .box {
+        border: 2px solid #ccc;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .box h1, .box h2, .box h3, .box h4, .box h5, .box h6 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .box p {
+        color: #555;
+        line-height: 1.6;
+    }
+
+    @media (min-width: 768px) {
+        .box {
+            width: 45%;
+        }
+    }
+    @media (min-width: 1024px) {
+        .box {
+            width: 30%;
+        }
+    }
+</style>
+
+<!-- PARAGRAPH -->
+<h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 40px;" id="para">Tirumala Temple - Paragraph</h2>
+<div class="responsive-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1S185C6gUp1q2TAt_RqFGEfRtcR4hR96__w&s" alt="Tirumala Temple" class="responsive-image">
+    <div class="text-content">
+        <p>The Tirumala Venkateswara Temple is a revered Hindu temple dedicated to Lord Venkateswara, located atop the Seshachalam Hills in Tirupati, Andhra Pradesh, India. It is one of the most visited religious centers in the world, attracting millions of devotees annually.</p>
+        <p>The temple's history spans several centuries, with mentions in ancient Tamil literature. The Pallavas, Cholas, Pandyas, and Vijayanagara emperors contributed to its development. The Vijayanagara period, particularly under Krishnadevaraya, saw significant enhancements to the temple's architecture and endowment.</p>
+        <p>The temple complex features Dravidian architecture, with a towering gopuram (entrance tower) and intricate carvings. The sanctum sanctorum houses the deity's idol, adorned with precious jewels. The temple is renowned for its elaborate rituals, including the tonsuring ceremony (Mokku), where devotees offer their hair as a symbol of sacrifice. The Tirumala Tirupati Devasthanams (TTD) manages the temple's administration, ensuring its smooth functioning and the welfare of devotees.</p>
+        <p>The daily rituals at Tirumala are a spectacle of devotion, beginning with the Suprabhatam, a pre-dawn awakening of the deity. Throughout the day, various pujas and sevas are performed, culminating in the Ekanta Seva, when the deity is put to rest. The offering of Laddu Prasadam is a significant tradition, with millions distributed to devotees each day.</p>
+        <p>Tirumala is not just a place of worship but also a center of cultural and social activities. The annual Brahmotsavam festival attracts massive crowds, featuring processions and cultural performances. The temple's role in charitable activities, including education and healthcare, is also noteworthy.</p>
+        <p>The Seshachalam Hills, surrounding Tirumala, are a biodiversity hotspot, adding to the spiritual and natural significance of the place. The temple's commitment to environmental conservation is evident in its efforts to maintain the ecological balance of the region.</p>
+        <p>The temple's popularity has led to the development of Tirupati as a major pilgrimage city, with numerous amenities for devotees. The TTD's initiatives to improve infrastructure and manage crowds have enhanced the pilgrimage experience for millions.</p>
+    </div>
+</div>
+<style>
+    .responsive-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 20px;
+        border: 2px solid #ccc;
+        background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+        border-radius: 15px;
+        font-size: 1.1em;
+        color: #333;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: 'Times New Roman', serif; /* Font family changed here */
+    }
+    .responsive-image {
+        width: 250px;
+        height: auto;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        flex-shrink: 0;
+        align-self: flex-start;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .text-content {
+        max-width: calc(100% - 270px);
+        text-align: justify;
+        line-height: 1.6;
+        font-family: 'Times New Roman', serif; /* Font family changed here */
+    }
+    @media (max-width: 768px) {
+        .responsive-container {
+            padding: 15px;
+        }
+        .text-content {
+            max-width: 100%;
+            padding-top: 20px;
+        }
+        .responsive-image {
+            padding-right: 0;
+            margin-bottom: 20px;
+            width: 180px;
+        }
+        h2 {
+            font-size: 2em;
+        }
+        .text-content {
+          font-size: 1em;
+        }
+    }
+    @media (max-width: 480px) {
+        .text-content {
+            font-size: 0.9em;
+        }
+        .responsive-image {
+            width: 150px;
+        }
+    }
+</style>
+<!-- YOUTUBE -->
+
+<h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 40px;" id="yt">YouTube</h2>
+<div class="responsive-containery">
+    <div class="video-description">
+        <iframe src="https://www.youtube.com/embed/HcOc7P5BMi4?si=oizPswa_dHxHLfWC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="description-contenty">
+            <p>HTML (HyperText Markup Language) is the backbone of web development, defining the structure and content of web pages. It utilizes tags to delineate elements like headings, paragraphs, images, and links, enabling browsers to render the intended webpage. Essential components include the <!DOCTYPE html> declaration, the <html>, <head>, and <body> tags, which form the basic structure. Key tags like h1- h6 'a' and image are fundamental for creating content. <br>
+
+To learn HTML effectively, begin with understanding its core structure and essential tags, then practice consistently by building simple web pages. Explore forms, tables, and semantic HTML for enhanced functionality and accessibility. Integrate CSS for styling and responsive design to ensure your pages are visually appealing and adaptable. Utilize online resources like W3Schools and MDN Web Docs, and engage in practical projects to solidify your knowledge.</p>
+        </div>
+    </div>
+</div>
+<style>
+    .responsive-containery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video-description {
+        display: flex;
+        flex-wrap: wrap;
+        color: #333;
+        background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+        border: 2px solid #ccc;
+        border-radius: 15px;
+        width: 1000px;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: 'Times New Roman', serif;
+    }
+
+    iframe {
+        width: 560px;
+        height: 315px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .description-contenty {
+        flex: 1;
+        padding-left: 20px;
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 1200px) {
+        .responsive-containery {
+            padding-left: 50px;
+        }
+
+        .video-description {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        iframe {
+            width: 100%;
+            height: auto;
+        }
+
+        .description-contenty {
+            padding: 20px 0 0;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .responsive-containery {
+            padding-left: 0;
+        }
+
+        .video-description {
+            padding: 15px;
+        }
+
+        .description-contenty {
+            font-size: 1em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .description-contenty {
+            font-size: 0.9em;
+        }
+    }
+</style>
+<!-- MAP -->
+ <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="map">Map</h2>
+<div class="responsive-containermm">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.118714649852!2d77.23844537470919!3d28.656163883008507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfce26ec085ef%3A0x441e32f4fa5002fb!2sRed%20Fort!5e0!3m2!1sen!2sin!4v1720191345681!5m2!1sen!2sin" class="map-iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p class="description-textmm">
+        The Gateway of India is an iconic monument located in Mumbai, India. Built during the 20th century, it stands as a symbol of the city's rich history and colonial past. The monument was erected to commemorate the visit of King George V and Queen Mary to Mumbai (then Bombay) in 1911. Its architectural style is a blend of Indo-Saracenic, incorporating elements from both Hindu and Muslim architectural designs.
+        <br><br>
+        Overlooking the Arabian Sea, the Gateway of India has become a popular tourist destination, attracting visitors from all over the world. It serves as a starting point for ferry rides to the famous Elephanta Caves. The monument's grandeur and historical significance make it a must-see landmark for anyone visiting Mumbai. The surrounding area is vibrant, with street vendors and local attractions, offering a glimpse into the bustling life of the city.
+        <br><br>
+        The Gateway of India is not just a historical monument; it's a living symbol of Mumbai's spirit, reflecting the city's resilience and cosmopolitan nature. It stands as a testament to the architectural brilliance of its time and continues to be a source of pride for the people of Mumbai.
+    </p>
+</div>
+<style>
+    .responsive-containermm {
+        display: flex;
+        flex-wrap: wrap;
+        color: #333;
+        border: 2px solid #ccc;
+        background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+        border-radius: 15px;
+        width: 100%;
+        max-width: 1000px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        min-height: 60vh;
+        padding: 20px;
+        font-family: 'Times New Roman', serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .map-iframe {
+        flex: 1;
+        min-width: 300px;
+        height: 350px;
+        border: 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .description-textmm {
+        flex: 1;
+        padding-left: 20px;
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+        .responsive-containermm {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .map-iframe {
+            width: 100%;
+            height: auto;
+        }
+
+        .description-textmm {
+            font-size: 1em;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .description-textmm {
+            font-size: 0.9em;
+        }
+    }
+</style>
+<!-- MARQUEE -->
+<h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="pre">Pre tag</h2>
+<div style="text-align: center; display: flex; align-items: center; margin-top: 50px; justify-content: center;" id="ee">
+    <div style="width: fit-content; margin-bottom: 80px;">
+        <pre style="padding: 20px; text-align: left; background: linear-gradient(135deg, #e0f7fa, #b2ebf2); border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); font-family: 'Courier New', monospace; color: #333; line-height: 1.6;">
+<h2> Example: HTML Pre Structure</h2>
+<pre>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+     Ipsa sequi consequatur debitis vitae! Eveniet, voluptates
+
+     sunt deserunt architecto at esse id excepturi vitae 
+     
+     perferendis facere delectus, explicabo aliquam ab iure 
+     
+     quaerat unde nihil! Facere, voluptatem nulla quaerat ipsum 
+     
+     maiores aut ea minus iusto amet temporibus reiciendis quos
+     
+     officia odit quod expedita veniam blanditiis saepe placeat. 
+     
+     Quo, odit aut, ab placeat fugiat ea veniam culpa laudantium 
+     
+     quisquam, libero optio magnam harum reiciendis sit? Commodi 
+     
+     ipsum explicabo dicta nihil obcaecati consectetur 
+     
+     necessitatibus non aspernatur, sint pariatur corporis eius
+     
+     id odio laudantium esse aperiam ex hic officiis 
+     
+     ut accusamus harum molestias. Iste, hic?
+        </pre>
+    </div>
+</div>
+<!-- MARQUEE -->
+ <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="mar">Marquee</h2>
+<div style="text-align: center;">
+    <marquee behavior="" direction="right" class="marquee">
+        <p style="font-size: 14px; font-weight: 400;">This is Marquee to right direction</p>
+    </marquee>
+    <marquee behavior="" direction="left" class="marquee">
+        <p style="font-size: 14px; font-weight: 400;">This is Marquee to left direction</p>
+    </marquee><br>
+    <marquee behavior="" direction="up" class="marquee">
+        <p style="font-size: 14px; font-weight: 400;">This is Marquee to up direction</p>
+    </marquee>
+    <marquee behavior="" direction="down" class="marquee">
+        <p style="font-size: 14px; font-weight: 400;">This is Marquee to down direction</p>
+    </marquee><br>
+</div>
+<style>
+    .marquee {
+        border: 1px solid #ccc;
+        border-radius: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+        color: #333;
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto; /* Added margin for spacing */
+        text-align: center;
+      /*  line-height: 40px; /* Vertically center text */
+        font-family: 'Times New Roman', serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    @media (max-width: 768px) {
+        .marquee {
+            height: 30px;
+            
+        }
+    }
+    @media (max-width: 480px) {
+        .marquee {
+            height: 25px;
+            
+        }
+    }
+</style>
+<!-- LINKS -->
+ <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="link">LINKS</h2>
+<div class="responsive-containerl">
+    <div class="main-content">
+        <h2><a href="https://www.google.com/" target="_blank"><i class="fas fa-g"></i> GOOGLE</a></h2>
+        <h2><a href="https://www.facebook.com/" target="_parent"><i class="fa fa-facebook"></i> FACEBOOK</a></h2>
+        <h2><a href="https://www.youtube.com/" target="_self"><i class="fab fa-youtube icon"></i> YOUTUBE</a></h2>
+        <h2><a href="https://wa.me" target="_blank" target="_top"><i class="fab fa-whatsapp"></i> WHATSAPP</a></h2>
+    </div>
+</div>
+<style>
+    .responsive-containerl {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .main-content {
+        border: 2px solid #ccc;
+        border-radius: 15px;
+        background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+        font-size: 1.1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1000px;
+        width: 90%;
+        padding: 40px 30px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: 'Times New Roman', serif;
+    }
+
+    .main-content h2 {
+        margin: 10px 15px;
+        color: #333;
+    }
+
+    .main-content a {
+        color: #333;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-content i {
+        margin-right: 8px;
+        font-size: 1.2em;
+    }
+
+    @media (max-width: 768px) {
+        .main-content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-content h2 {
+            margin: 10px 0;
+        }
+    }
+</style>
+<!-- LIST -->
+ <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="list">LIST</h2>
+ 
+ 
+
+
+
+
+
+<div class="container" style="background-color: azure; padding: 20px; font-family: 'Times New Roman', serif;">
+    <div class="box1" style="border: 2px solid #ccc; border-radius: 15px; background: linear-gradient(135deg, #e0f7fa, #b2ebf2); padding: 20px; margin: 20px auto; width: 90%; max-width: 1000px; box-sizing: border-box; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #333;">ORDER LIST ALPHA</h2>
+        <ol type="A" start="10000000000" style="margin: 20px; padding: 10px; color: #333;">
+            <li>PROJECTS</li>
+<li>BLOG</li>
+<li>PORTFOLIO</li>
+<li>TESTIMONIALS</li>
+<li>SKILLS</li>
+<li>EXPERIENCE</li>
+<li>EDUCATION</li>
+<li>CERTIFICATIONS</li>
+<li>TUTORIALS</li>
+        </ol>
+    </div>
+
+    <div class="box2" style="border: 2px solid #ccc; border-radius: 15px; background: linear-gradient(135deg, #e0f7fa, #b2ebf2); padding: 20px; margin: 20px auto; width: 90%; max-width: 1000px; box-sizing: border-box; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #333;">UNORDERED LIST</h2>
+        <ul style="list-style-type: disc; margin: 20px; color: #333;">
+          <li>PROJECTS</li>
+<li>BLOG</li>
+<li>PORTFOLIO</li>
+<li>TESTIMONIALS</li>
+<li>SKILLS</li>
+<li>EXPERIENCE</li>
+<li>EDUCATION</li>
+<li>CERTIFICATIONS</li>
+<li>TUTORIALS</li>
+        </ul>
+    </div>
+
+    <div class="box3" style="border: 2px solid #ccc; border-radius: 15px; background: linear-gradient(135deg, #e0f7fa, #b2ebf2); padding: 20px; margin: 20px auto; width: 90%; max-width: 1000px; box-sizing: border-box; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #333;">DESCRIPTION LIST</h2>
+        <dl style="margin: 20px; color: #333;">
+            <dt>FRONTEND</dt>
+            <dd>#HTML</dd>
+            <dd>#CSS</dd>
+            <dd>#JAVASCRIPT</dd>
+            <dd>#REACT</dd>
+            <dd>#JQUERY</dd>
+            <dt>BACKEND</dt>
+            <dd>#JAVA</dd>
+            <dd>#C++</dd>
+            <dd>#SQL</dd>
+            <dd>#CLOUD</dd>
+        </dl>
+    </div>
+</div>
+<!-- fq -->
+ <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="fq">FORMATING AND QUOTATIONS</h2>
+<div class="responsive-containerl">
+    <div class="main-content">
+   <div class="container" style="background-color: azure; padding: 20px; font-family: 'Times New Roman', serif;">
+    
+    <h4>Bold TAG</h4> <br> 
+        <b>This tag is used to display Bold text</b> <br> <br>
+
+    <h4>Italic tag</h4> <br>
+    <I>IThis tag is used to display italic text</I> <br> <br>
+    <h4>SMALL tag</h4> <br> 
+    <SMALL>This tag is used to display small text</SMALL> <br> <br>
+    <h4>STRONG Tag</h4> <br>
+    <STRONG>This tag is used to display strong text</STRONG> <br> <br>
+    <h4>EMPHASIZED Tag</h4> <br>
+    <EM>This tag is used to display EMPHASIZED text</EM> <br> <br>
+    <h4>Inserted Tag</h4><br>
+    <INS>This tag is used to display Inserted text</INS> <br> <br>
+    <h4>Underlined tag</h4> <br>
+    <U>This tag is used to display Underlined text</U> <br> <br>
+    <h4>DELETED /STRIKE tag</h4> <br>
+    <del>This tag is used to display deleted or striked text</del> <br> <br>
+    <h4>MARKED Tag</h4> <br>
+    <mark>This tag is used to display marked text</mark><BR> <br> 
+        <h4>ADDRESS tag</h4>
+    ADDRESS
+    <address>8-3-6/4,<br>
+        Jubilee hills,<br>
+        Hyderabad,<br>
+        500034. <br>
+    </address> <br>
+<h4>BDO tag</h4>
+    <bdo dir="rtl">IAS</bdo> <br> <br>
+    <h4>Abbreviation tag</h4> <br>
+    <ABBR title="INDIAN ADMINISTRATIVE SERVICE">IAS</ABBR> <br> <BR> 
+<h4>QUOTATION tag</h4> <br>
+    <q>THIS IS QUOTATION TAG</q> <br>
+    <h4>subscript or superscript tag</h4> <br>
+    2 <SUP>3</SUP>=8 <br>
+    <BR>
+        <h4>Cite tag</h4>
+    THE <cite>PYSCHOLOGY OF</cite> MONEY <br>
+    <blockquote cite="https://google.com/">GOOGLE WEBSITE </blockquote>
+  
+    <h4>paragraph tag</h4>
+     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa animi aliquam
+        eaque nihil laboriosam tempore esse praesentium tempora odit. Accusamus
+        necessitatibus consequuntur consequatur neque consectetur vero mollitia, veritatis nulla. Quo. Lorem ipsum dolor
+        sit amet, consectetur adipisicing elit. Quod officia praesentium ipsam? Minus reprehenderit deserunt maiores
+        dolorum. Cupiditate incidunt qui distinctio. Voluptatum sed alias ratione quisquam, iste consequuntur, dolorum,
+        quaerat sint adipisci rerum incidunt laboriosam voluptates veritatis voluptatem sit reprehenderit atque eos ex
+        error voluptas possimus explicabo iusto pariatur. Quibusdam.</P>
+        <h4>pre tag </h4>
+         <PRE>Lorem ipsum,       dolor sit amet consectetur adipisicing elit.
+        
+         ab architecto sequi sapiente aliquam atque. 
+         Consequuntur, a! Nostrum fuga rerum harum officiis obcaecati 
+         repellat velit quia nobis tenetur?</PRE>
+         </div>
+         </div>
+         </div>
+         <style>
+             .responsive-containerl {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+.main-content {
+        border: 2px solid #ccc;
+        border-radius: 15px;
+        background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+        font-size: 1.1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1000px;
+        width: 90%;
+        padding: 40px 30px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: 'Times New Roman', serif;
+    }
+    
+
+
+     @media (max-width: 768px) {
+        .main-content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-content h2 {
+            margin: 10px 0;
+        }
+    }
+
+     </style>
+    <!-- table -->
+ <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="table">TABLE</h2>
+
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%; /* Changed to 100% to fill the main-content width */
+    margin: 20px 0; /* Changed to 0 auto for better flex alignment */
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    width: 100%;
+    table-layout: auto; /* or table-layout: fixed; */
+    overflow-x: auto;
+}
+
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50; /* Green background for header */
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey background for even rows */
+}
+
+tr:hover {
+    background-color: #ddd; /* Grey background on hover */
+}
+
+/* Style for vertical table */
+.vertical-table {
+    width: 100%; /* Changed to 100% to fill the main-content width */
+}
+
+.vertical-table th {
+    background-color: #008CBA; /* Blue background for header */
+}
+
+.responsive-containerl {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-content {
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column; /* Changed to column to stack tables */
+    justify-content: center;
+    max-width: 1000px;
+    width: 90%;
+       overflow-x: auto;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', serif;
+}
+  @media (max-width: 768px) {
+        .main-content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-content h2 {
+            margin: 10px 0;
+        }
+    }
+</style>
+
+<div class="responsive-containerl">
+    <div class="main-content">
+        <h2>Horizontal Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Occupation</th>
+            </tr>
+            <tr>
+                <td>Yaswanth</td>
+                <td>21</td>
+                <td>Hyderabad</td>
+                <td>Telangana</td>
+                <td>Student</td>
+            </tr>
+            <tr>
+                <td>Ashiq</td>
+                <td>22</td>
+                <td>Banglore</td>
+                <td>Karnataka</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>Jayanth</td>
+                <td>21</td>
+                <td>Banglore</td>
+                <td>Karnataka</td>
+                <td>System Engineer</td>
+            </tr>
+            <tr>
+                <td>Hemanth</td>
+                <td>22</td>
+                <td>Banglore</td>
+                <td>Karnataka</td>
+                <td>SAP developer</td>
+            </tr>
+            <tr>
+                <td>Harsha</td>
+                <td>23</td>
+                <td>Banglore</td>
+                <td>Karnataka</td>
+                <td>System Engineer</td>
+            </tr>
+        </table>
+        <br>
+        <h2>Vertical Table</h2>
+        <table class="vertical-table">
+            <tr>
+                <th>Attribute</th>
+                <th>Person 1</th>
+                <th>Person 2</th>
+                <th>Person 3</th>
+                <th>Person 4</th>
+                <th>Person 5</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Ashiq</td>
+                <td>Jayanth</td>
+                <td>Hemanth</td>
+                <td>Harsha</td>
+                <td>Yaswanth</td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>22</td>
+                <td>21</td>
+                <td>21</td>
+                <td>23</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>Banglore</td>
+                <td>Banglore</td>
+                <td>Banglore</td>
+                <td>Banglore</td>
+                <td>Hyderabad</td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>Karnataka</td>
+                <td>Karnataka</td>
+                <td>Karnataka</td>
+                <td>Karnataka</td>
+                <td>Telangana</td>
+            </tr>
+            <tr>
+                <td>Occupation</td>
+                <td>Software Engineer</td>
+                <td>System Engineer</td>
+                <td>SAP developer</td>
+                <td>System Engineer</td>
+                <td>Student</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- colors -->
+
+<h2 id="color" class="head" style="
+    text-decoration: none;
+    color: #FFD700;
+    font-size: 2.5em;
+    margin-top: 80px;
+    padding: 25px;
+    background: linear-gradient(135deg, #1E90FF, #800080);
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    letter-spacing: 1px;
+    border: 2px solid #FFA500;
+    margin-bottom: 40px;
+">Colors</h2>
+
+<style>
+    .color-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .color-table th {
+        background: linear-gradient(135deg, #1E90FF, #800080);
+        color: #FFD700;
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        font-family: 'Times New Roman', serif;
+    }
+
+    .color-table td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ddd;
+        font-family: Arial, sans-serif;
+    }
+
+    .color-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .color-container > div {
+        width: 30%; /* Adjust as needed */
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    @media (max-width: 768px) {
+        .color-container > div {
+            width: 48%; /* Adjust for smaller screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .color-container > div {
+            width: 100%; /* Full width on very small screens */
+        }
+    }
+</style>
+
+<div class="color-container">
+    <div>
+        <table class="color-table">
+            <tr>
+                <th>RGB</th>
+            </tr>
+            <tr><td style="background-color: rgb(255, 0, 0);">rgb(255, 0, 0)</td></tr>
+            <tr><td style="background-color: rgb(0, 0, 255);">rgb(0, 0, 255)</td></tr>
+            <tr><td style="background-color: rgb(0, 255, 0);">rgb(0, 255, 0)</td></tr>
+            <tr><td style="background-color: rgb(255, 255, 0);">rgb(255, 255, 0)</td></tr>
+            <tr><td style="background-color: rgb(255, 0, 255);">rgb(255, 0, 255)</td></tr>
+            <tr><td style="background-color: rgb(0, 255, 255);">rgb(0, 255, 255)</td></tr>
+            <tr><td style="background-color: rgb(255, 0, 150);">rgb(255, 0, 150)</td></tr>
+            <tr><td style="background-color: rgb(255, 150, 0);">rgb(255, 150, 0)</td></tr>
+            <tr><td style="background-color: rgb(150, 255, 0);">rgb(150, 255, 0)</td></tr>
+            <tr><td style="background-color: rgb(150, 0, 255);">rgb(150, 0, 255)</td></tr>
+        </table>
+    </div>
+
+    <div>
+        <table class="color-table">
+            <tr>
+                <th>RGBA</th>
+            </tr>
+            <tr><td style="background-color: rgba(255, 0, 0, 1);">rgba(255, 0, 0,1)</td></tr>
+            <tr><td style="background-color: rgba(0, 0, 255, 0.6);">rgba(0, 0, 255, 0.6)</td></tr>
+            <tr><td style="background-color: rgba(0, 255, 0, 0.2);">rgba(0, 255, 0, 0.2)</td></tr>
+            <tr><td style="background-color: rgba(255, 255, 0, 0.7);">rgba(255, 255, 0, 0.7)</td></tr>
+            <tr><td style="background-color: rgba(255, 0, 255, 0.3);">rgba(255, 0, 255, 0.3)</td></tr>
+            <tr><td style="background-color: rgba(0, 255, 255, 0.3);">rgba(0, 255, 255, 0.3)</td></tr>
+            <tr><td style="background-color: rgba(255, 0, 150, 0.4);">rgba(255, 0, 150, 0.4)</td></tr>
+            <tr><td style="background-color: rgba(255, 150, 0, 0.7);">rgba(255, 150, 0, 0.7)</td></tr>
+            <tr><td style="background-color: rgba(150, 255, 0, 0.8);">rgba(150, 255, 0, 0.8)</td></tr>
+            <tr><td style="background-color: rgba(150, 0, 255, 0.9);">rgba(150, 0, 255, 0.9)</td></tr>
+        </table>
+    </div>
+
+    <div>
+        <table class="color-table">
+            <tr>
+                <th>SHADES OF GREY (RGB)</th>
+            </tr>
+            <tr><td style="background-color: rgb(0, 0, 0);">rgb(0, 0, 0)</td></tr>
+            <tr><td style="background-color: rgb(24, 24, 24);">rgb(24, 24, 24)</td></tr>
+            <tr><td style="background-color: rgb(64, 64, 64);">rgb(64, 64, 64)</td></tr>
+            <tr><td style="background-color: rgb(80, 80, 80);">rgb(80, 80, 80)</td></tr>
+            <tr><td style="background-color: rgb(104, 104, 104);">rgb(104, 104, 104)</td></tr>
+            <tr><td style="background-color: rgb(112, 112, 112);">rgb(112, 112, 112)</td></tr>
+            <tr><td style="background-color: rgb(169, 169, 169);">rgb(169, 169, 169)</td></tr>
+            <tr><td style="background-color: rgb(190, 190, 190);">rgb(190, 190, 190)</td></tr>
+           <tr><td style="background-color: rgb(232, 232, 232);">rgb(232, 232, 232)</td></tr>
+            <tr><td style="background-color: rgb(255, 255, 255);">rgb(255, 255, 255)</td></tr>
+        </table>
+    </div>
+
+    <div>
+        <table class="color-table">
+            <tr>
+                <th>HEX</th>
+            </tr>
+            <tr><td style="background-color: #ff0000;">#ff0000</td></tr>
+            <tr><td style="background-color: #0000ff;">#0000ff</td></tr>
+            <tr><td style="background-color: #00ff00;">#00ff00</td></tr>
+            <tr><td style="background-color: #ffff00;">#ffff00</td></tr>
+            <tr><td style="background-color: #ff00ff;">#ff00ff</td></tr>
+            <tr><td style="background-color: #00ffff;">#00ffff</td></tr>
+            <tr><td style="background-color: #ff0096;">#ff0096</td></tr>
+            <tr><td style="background-color: #ff9600;">#ff9600</td></tr>
+            <tr><td style="background-color: #96ff00;">#96ff00</td></tr>
+            <tr><td style="background-color: #9600ff;">#9600ff</td></tr>
+        </table>
+    </div>
+
+    <div>
+        <table class="color-table">
+            <tr>
+                <th>SHADES OF GREY (HEX)</th>
+            </tr>
+            <tr><td style="background-color: #000000;">#000000</td></tr>
+            <tr><td style="background-color: #181818;">#181818</td></tr>
+            <tr><td style="background-color: #404040;">#404040</td></tr>
+            <tr><td style="background-color: #505050;">#505050</td></tr>
+            <tr><td style="background-color: #686868;">#686868</td></tr>
+            <tr><td style="background-color: #707070;">#707070</td></tr>
+            <tr><td style="background-color: #a9a9a9;">#a9a9a9</td></tr>
+            <tr><td style="background-color: #bebebe;">#bebebe</td></tr>
+            <tr><td style="background-color: #e8e8e8;">#e8e8e8</td></tr>
+            <tr><td style="background-color: #ffffff;">#ffffff</td></tr>
+        </table>
+    </div>
+
+    <div>
+        <table class="color-table">
+            <tr>
+                <th>HSL</th>
+            </tr>
+            <tr><td style="background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</td></tr>
+            <tr><td style="background-color: hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</td></tr>
+            <tr><td style="background-color: hsl(120, 100%, 50%);">hsl(120, 100%, 50%)</td></tr>
+            <tr><td style="background-color: hsl(60, 100%, 50%);">hsl(60, 100%, 50%)</td></tr>
+            <tr><td style="background-color: hsl(300, 100%, 50%);">hsl(300, 100%, 50%)</td></tr>
+            <tr><td style="background-color: hsl(180, 100%, 50%);">hsl(180, 100%, 50%)</td></tr>
+            <tr><td style="background-color: hsl(325, 100%, 50%);">hsl(325, 100%, 50%)</td></tr>
+            <tr><td style="background-color: hsl(35, 100%, 50%);">hsl(35, 100%, 50%)</td></tr>
+            <tr><td style="background-color: hsl(85, 100%, 50%);">hsl(85, 100%, 50%)</td></tr>
+            <tr><td style="background-color: hsl(275, 100%, 50%);">hsl(275, 100%, 50%)</td></tr>
+        </table>
+    </div>
+
+    <div>
+        <table class="color-table">
+            <tr>
+                <th>HSLA</th>
+            </tr>
+            <tr><td style="background-color: hsla(0, 100%, 50%, 1);">hsla(0, 100%, 50%, 1)</td></tr>
+            <tr><td style="background-color: hsla(240, 100%, 50%, 0.6);">hsla(240, 100%, 50%, 0.6)</td></tr>
+            <tr><td style="background-color: hsla(120, 100%, 50%, 0.2);">hsla(120, 100%, 50%, 0.2)</td></tr>
+            <tr><td style="background-color: hsla(60, 100%, 50%, 0.7);">hsla(60, 100%, 50%, 0.7)</td></tr>
+            <tr><td style="background-color: hsla(300, 100%, 50%, 0.3);">hsla(300, 100%, 50%, 0.3)</td></tr>
+            <tr><td style="background-color: hsla(180, 100%, 50%, 0.3);">hsla(180, 100%, 50%, 0.3)</td></tr>
+            <tr><td style="background-color: hsla(325, 100%, 50%, 0.4);">hsla(325, 100%, 50%, 0.4)</td></tr>
+            <tr><td style="background-color: hsla(35, 100%, 50%, 0.7);">hsla(35, 100%, 50%, 0.7)</td></tr>
+            <tr><td style="background-color: hsla(85, 100%, 50%, 0.8);">hsla(85, 100%, 50%, 0.8)</td></tr>
+            <tr><td style="background-color: hsla(275, 100%, 50%, 0.9);">hsla(275, 100%, 50%, 0.9)</td></tr>
+        </table>
+    </div>
+
+    <div>
+        <table class="color-table">
+            <tr>
+                <th>SHADES OF GREY (HSL)</th>
+            </tr>
+            <tr><td style="background-color: hsl(0, 0%, 0%);">hsl(0, 0%, 0%)</td></tr>
+            <tr><td style="background-color: hsl(0, 0%, 9%);">hsl(0, 0%, 9%)</td></tr>
+            <tr><td style="background-color: hsl(0, 0%, 25%);">hsl(0, 0%, 25%)</td></tr>
+            <tr><td style="background-color: hsl(0, 0%, 31%);">hsl(0, 0%, 31%)</td></tr>
+            <tr><td style="background-color: hsl(0, 0%, 41%);">hsl(0, 0%, 41%)</td></tr>
+            <tr><td style="background-color: hsl(0, 0%, 44%);">hsl(0, 0%, 44%)</td></tr>
+            <tr><td style="background-color: hsl(0, 0%, 66%);">hsl(0, 0%, 66%)</td></tr>
+            <tr><td style="background-color: hsl(0, 0%, 75%);">hsl(0, 0%, 75%)</td></tr>
+            <tr><td style="background-color: hsl(0, 0%, 91%);">hsl(0 , 0%, 91%)</td></tr>
+            <tr><td style="background-color: hsl(0, 0%, 100%);">hsl(0, 0%, 100%)</td></tr>
+        </table>
+    </div>
+</div>
+<!-- picture -->
+
+  <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="pic">PICTURE</h2>
+
+<style>
+    .mapping-container,
+    .picture-container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+
+    .mapping-container h2,
+    .picture-container h2 {
+        color: #FFD700;
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        font-family: 'Times New Roman', serif;
+    }
+
+    .mapping-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .picture-container picture {
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    .picture-container picture img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<div class="mapping-container">
+    <h2>MAPPING</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Seethamma_Vakitlo_Sirimalle_Chettu.jpg" usemap="#image-map" alt="Movie Scene" />
+    <map name="image-map">
+        <area target="" alt="Anjali" title="Anjali" href="https://en.wikipedia.org/wiki/Anjali_(actress)" coords="1,27,82,112" shape="rect" />
+        <area target="" alt="Venkatesh" title="Venkatesh" href="https://en.wikipedia.org/wiki/Venkatesh_(actor)" coords="136,63,64" shape="circle" />
+        <area target="" alt="Mahesh babu" title="Mahesh babu" href="https://en.wikipedia.org/wiki/Mahesh_Babu" coords="203,9,304,150" shape="rect" />
+        <area target="" alt="Samantha" title="Samantha" href="https://en.wikipedia.org/wiki/Samantha_Ruth_Prabhu" coords="346,74,48" shape="circle" />
+    </map>
+</div>
+
+<div class="picture-container">
+    <h2>PICTURE ELEMENT</h2>
+    <picture>
+        <source media="(min-width: 1100px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_2JC2NJHLTPyNaQ6BEm5Zo4jvYXZWgTYbA&s" />
+        <source media="(min-width: 1000px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRInwp3KwXrDSLlYu5VB6A5wwEG-yblJD_EOw&s" />
+        <img src="https://t4.ftcdn.net/jpg/02/83/46/33/360_F_283463385_mfnrx6RPU3BqObhVuVjYZjeZ5pegE7xq.jpg" alt="Web Design" />
+    </picture>
+     <div class="row">
+        <div class="column">
+            <h2>IMAGES</h2>
+            <h4>ABSOLUTE IMAGES</h4>
+
+            <img style=" height:400px; width:400px; " src="https://images.pexels.com/photos/7974/pexels-photo.jpg?cs=srgb&dl=pexels-life-of-pix-7974.jpg&fm=jpg" alt="ui image">
+        </div> <br> <br> 
+        <div class="column">
+            <h4>RELATIVE IMAGES</h4>
+            <img style="height: 300px; width:300px; padding:60px;  border:1px solid black;" src="web.jpg"
+                    alt="web image">  <br> <br>
+        </div>
+        <h4>OPACITY</h4>
+        <img style="opacity:0.4; height:400px; width:400px;" src="https://images.pexels.com/photos/7974/pexels-photo.jpg?cs=srgb&dl=pexels-life-of-pix-7974.jpg&fm=jpg" alt="web image">
+    </div>
+</div>
+
+<!-- background image -->
+   <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="bg">BACKGROUND IMAGE</h2>
+
+<div class="coral-container">
+    <div class="coral-box">
+        <h4 class="coral-heading">Repeated Image</h4>
+        <p class="coral-text" style="background-image: url(https://images.unsplash.com/photo-1546026423-cc4642628d2b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29yYWwlMjByZWVmfGVufDB8fDB8fHww); background-size: 300px 200px;" title="with repeated coral image">
+            Coral reefs are diverse underwater ecosystems held together by calcium carbonate structures secreted by corals. They are among the most diverse and productive ecosystems on Earth, often referred to as the "rainforests of the sea." Coral reefs provide habitat for a vast array of marine species, protect coastlines from erosion, and support fisheries and tourism.
+            <br><br>
+            Coral reefs are found in tropical and subtropical oceans, primarily in shallow waters where sunlight can penetrate. They are composed of colonies of tiny animals called coral polyps, which secrete hard calcium carbonate skeletons. These skeletons accumulate over time, forming the complex structures that make up the reef.
+            <br><br>
+            Coral reefs face numerous threats, including climate change, pollution, overfishing, and destructive fishing practices. Rising sea temperatures can cause coral bleaching, a phenomenon where corals expel the algae living in their tissues, leading to their death. Pollution from land-based sources, such as agriculture and sewage, can also harm coral reefs.
+            <br><br>
+            The Great Barrier Reef, located off the coast of Australia, is the world's largest coral reef system, stretching for over 2,300 kilometers (1,400 miles). It is home to thousands of species of fish, corals, and other marine organisms. Other notable coral reefs include the Mesoamerican Barrier Reef, the Red Sea Coral Reef, and the Raja Ampat Islands.
+            <br><br>
+            Protecting coral reefs is crucial for maintaining marine biodiversity and ensuring the health of our oceans. Conservation efforts include reducing greenhouse gas emissions, improving water quality, and establishing marine protected areas.
+        </p>
+    </div>
+    <br>
+    <div class="coral-box">
+        <h4 class="coral-heading">No-Repeated Image</h4>
+        <p class="coral-text" style="background-image: url(https://images.unsplash.com/photo-1546026423-cc4642628d2b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29yYWwlMjByZWVmfGVufDB8fDB8fHww); background-size: 300px 200px; background-repeat: no-repeat;" title="with no-repeat coral image">
+            Coral reefs are diverse underwater ecosystems held together by calcium carbonate structures secreted by corals. They are among the most diverse and productive ecosystems on Earth, often referred to as the "rainforests of the sea." Coral reefs provide habitat for a vast array of marine species, protect coastlines from erosion, and support fisheries and tourism.
+            <br><br>
+            Coral reefs are found in tropical and subtropical oceans, primarily in shallow waters where sunlight can penetrate. They are composed of colonies of tiny animals called coral polyps, which secrete hard calcium carbonate skeletons. These skeletons accumulate over time, forming the complex structures that make up the reef.
+            <br><br>
+            Coral reefs face numerous threats, including climate change, pollution, overfishing, and destructive fishing practices. Rising sea temperatures can cause coral bleaching, a phenomenon where corals expel the algae living in their tissues, leading to their death. Pollution from land-based sources, such as agriculture and sewage, can also harm coral reefs.
+            <br><br>
+            The Great Barrier Reef, located off the coast of Australia, is the world's largest coral reef system, stretching for over 2,300 kilometers (1,400 miles). It is home to thousands of species of fish, corals, and other marine organisms. Other notable coral reefs include the Mesoamerican Barrier Reef, the Red Sea Coral Reef, and the Raja Ampat Islands.
+            <br><br>
+            Protecting coral reefs is crucial for maintaining marine biodiversity and ensuring the health of our oceans. Conservation efforts include reducing greenhouse gas emissions, improving water quality, and establishing marine protected areas.
+        </p>
+    </div>
+    <br>
+    <div class="coral-box">
+        <h4 class="coral-heading">Repeat-X Image</h4>
+        <p class="coral-text" style="background-image: url(https://images.unsplash.com/photo-1546026423-cc4642628d2b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29yYWwlMjByZWVmfGVufDB8fDB8fHww); background-size: 300px 200px; background-repeat: repeat-x;" title="with repeat-x coral image">
+            Coral reefs are diverse underwater ecosystems held together by calcium carbonate structures secreted by corals. They are among the most diverse and productive ecosystems on Earth, often referred to as the "rainforests of the sea." Coral reefs provide habitat for a vast array of marine species, protect coastlines from erosion, and support fisheries and tourism.
+            <br><br>
+            Coral reefs are found in tropical and subtropical oceans, primarily in shallow waters where sunlight can penetrate. They are composed of colonies of tiny animals called coral polyps, which secrete hard calcium carbonate skeletons. These skeletons accumulate over time, forming the complex structures that make up the reef.
+            <br><br>
+            Coral reefs face numerous threats, including climate change, pollution, overfishing, and destructive fishing practices. Rising sea temperatures can cause coral bleaching, a phenomenon where corals expel the algae living in their tissues, leading to their death. Pollution from land-based sources, such as agriculture and sewage, can also harm coral reefs.
+            <br><br>
+            The Great Barrier Reef, located off the coast of Australia, is the world's largest coral reef system, stretching for over 2,300 kilometers (1,400 miles). It is home to thousands of species of fish, corals, and other marine organisms. Other notable coral reefs include the Mesoamerican Barrier Reef, the Red Sea Coral Reef, and the Raja Ampat Islands.
+            <br><br>
+            Protecting coral reefs is crucial for maintaining marine biodiversity and ensuring the health of our oceans. Conservation efforts include reducing greenhouse gas emissions, improving water quality, and establishing marine protected areas.
+        </p>
+    </div>
+    <br>
+    <div class="coral-box">
+        <h4 class="coral-heading">Repeat-Y Image</h4>
+        <p class="coral-text" style="background-image: url(https://images.unsplash.com/photo-1546026423-cc4642628d2b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29yYWwlMjByZWVmfGVufDB8fDB8fHww); background-size: 300px 200px; background-repeat: repeat-y;" title="with repeat-y coral image">
+            Coral reefs are diverse underwater ecosystems held together by calcium carbonate structures secreted by corals. They are among the most diverse and productive ecosystems on Earth, often referred to as the "rainforests of the sea." Coral reefs provide habitat for a vast array of marine species, protect coastlines from erosion, and support fisheries and tourism.
+            <br><br>
+            Coral reefs are found in tropical and subtropical oceans, primarily in shallow waters where sunlight can penetrate. They are composed of colonies of tiny animals called coral polyps, which secrete hard calcium carbonate skeletons. These skeletons accumulate over time, forming the complex structures that make up the reef.
+            <br><br>
+            Coral reefs face numerous threats, including climate change, pollution, overfishing, and destructive fishing practices. Rising sea temperatures can cause coral bleaching, a phenomenon where corals expel the algae living in their tissues, leading to their death. Pollution from land-based sources, such as agriculture and sewage, can also harm coral reefs.
+            <br><br>
+            The Great Barrier Reef, located off the coast of Australia, is the world's largest coral reef system, stretching for over 2,300 kilometers (1,400 miles). It is home to thousands of species of fish, corals, and other marine organisms. Other notable coral reefs include the Mesoamerican Barrier Reef, the Red Sea Coral Reef, and the Raja Ampat Islands.
+            <br><br>
+            Protecting coral reefs is crucial for maintaining marine biodiversity and ensuring the health of our oceans. Conservation efforts include reducing greenhouse gas emissions, improving water quality, and establishing marine protected areas.
+        </p>
+    </div>
+    <br>
+    <div class="coral-box">
+        <h4 class="coral-heading">Repeat-Round Image</h4>
+        <p class="coral-text" style="background-image: url(https://images.unsplash.com/photo-1546026423-cc4642628d2b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29yYWwlMjByZWVmfGVufDB8fDB8fHww); background-size: 300px 200px; background-repeat: round;" title="with repeat-round coral image">
+            Coral reefs are diverse underwater ecosystems held together by calcium carbonate structures secreted by corals. They are among the most diverse and productive ecosystems on Earth, often referred to as the "rainforests of the sea." Coral reefs provide habitat for a vast array of marine species, protect coastlines from erosion, and support fisheries and tourism.
+            <br><br>
+            Coral reefs are found in tropical and subtropical oceans, primarily in shallow waters where sunlight can penetrate. They are composed of colonies of tiny animals called coral polyps, which secrete hard calcium carbonate skeletons. These skeletons accumulate over time, forming the complex structures that make up the reef.
+            <br><br>
+            Coral reefs face numerous threats, including climate change, pollution, overfishing, and destructive fishing practices. Rising sea temperatures can cause coral bleaching, a phenomenon where corals expel the algae living in their tissues, leading to their death. Pollution from land-based sources, such as agriculture and sewage, can also harm coral reefs.
+            <br><br>
+            The Great Barrier Reef, located off the coast of Australia, is the world's largest coral reef system, stretching for over 2,300 kilometers (1,400 miles). It is home to thousands of species of fish, corals, and other marine organisms. Other notable coral reefs include the Mesoamerican Barrier Reef, the Red Sea Coral Reef, and the Raja Ampat Islands.
+            <br><br>
+            Protecting coral reefs is crucial for maintaining marine biodiversity and ensuring the health of our oceans. Conservation efforts include reducing greenhouse gas emissions, improving water quality, and establishing marine protected areas.
+        </p>
+    </div>
+    <br>
+    <div class="coral-box">
+        <h4 class="coral-heading">Repeat-Space Image</h4>
+        <p class="coral-text" style="background-image: url(https://images.unsplash.com/photo-1546026423-cc4642628d2b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29yYWwlMjByZWVmfGVufDB8fDB8fHww); background-size: 300px 200px; background-repeat: space;" title="with repeat-space coral image">
+            Coral reefs are diverse underwater ecosystems held together by calcium carbonate structures secreted by corals. They are among the most diverse and productive ecosystems on Earth, often referred to as the "rainforests of the sea." Coral reefs provide habitat for a vast array of marine species, protect coastlines from erosion, and support fisheries and tourism.
+            <br><br>
+            Coral reefs are found in tropical and subtropical oceans, primarily in shallow waters where sunlight can penetrate. They are composed of colonies of tiny animals called coral polyps, which secrete hard calcium carbonate skeletons. These skeletons accumulate over time, forming the complex structures that make up the reef.
+            <br><br>
+            Coral reefs face numerous threats, including climate change, pollution, overfishing, and destructive fishing practices. Rising sea temperatures can cause coral bleaching, a phenomenon where corals expel the algae living in their tissues, leading to their death. Pollution from land-based sources, such as agriculture and sewage, can also harm coral reefs.
+            <br><br>
+            The Great Barrier Reef, located off the coast of Australia, is the world's largest coral reef system, stretching for over 2,300 kilometers (1,400 miles). It is home to thousands of species of fish, corals, and other marine organisms. Other notable coral reefs include the Mesoamerican Barrier Reef, the Red Sea Coral Reef, and the Raja Ampat Islands.
+            <br><br>
+            Protecting coral reefs is crucial for maintaining marine biodiversity and ensuring the health of our oceans. Conservation efforts include reducing greenhouse gas emissions, improving water quality, and establishing marine protected areas.
+        </p>
+    </div>
+    <br>
+    <div class="coral-box">
+        <h4 class="coral-heading">Repeat-Unset Image</h4>
+        <p class="coral-text" style="background-image: url(https://images.unsplash.com/photo-1546026423-cc4642628d2b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29yYWwlMjByZWVmfGVufDB8fDB8fHww); background-size: 300px 200px; background-repeat: unset;" title="with repeat-unset coral image">
+            Coral reefs are diverse underwater ecosystems held together by calcium carbonate structures secreted by corals. They are among the most diverse and productive ecosystems on Earth, often referred to as the "rainforests of the sea." Coral reefs provide habitat for a vast array of marine species, protect coastlines from erosion, and support fisheries and tourism.
+            <br><br>
+            Coral reefs are found in tropical and subtropical oceans, primarily in shallow waters where sunlight can penetrate. They are composed of colonies of tiny animals called coral polyps, which secrete hard calcium carbonate skeletons. These skeletons accumulate over time, forming the complex structures that make up the reef.
+            <br><br>
+            Coral reefs face numerous threats, including climate change, pollution, overfishing, and destructive fishing practices. Rising sea temperatures can cause coral bleaching, a phenomenon where corals expel the algae living in their tissues, leading to their death. Pollution from land-based sources, such as agriculture and sewage, can also harm coral reefs.
+            <br><br>
+            The Great Barrier Reef, located off the coast of Australia, is the world's largest coral reef system, stretching for over 2,300 kilometers (1,400 miles). It is home to thousands of species of fish, corals, and other marine organisms. Other notable coral reefs include the Mesoamerican Barrier Reef, the Red Sea Coral Reef, and the Raja Ampat Islands.
+            <br><br>
+            Protecting coral reefs is crucial for maintaining marine biodiversity and ensuring the health of our oceans. Conservation efforts include reducing greenhouse gas emissions, improving water quality, and establishing marine protected areas.
+        </p>
+    </div>
+</div>
+
+<style>
+    .coral-container {
+        width: 80%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+        border: 2px solid #5F9EA0; /* Dark cyan border for coral */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #E0FFFF; /* Light cyan background */
+    }
+
+    .coral-box {
+        border: 1px solid #ADD8E6; /* Light blue border */
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .coral-heading {
+        color: #008B8B; /* Dark cyan heading */
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .coral-text {
+        font-family: 'Georgia', serif; /* Change font to Georgia */
+        line-height: 1.6;
+        background-position: center;
+        padding: 15px;
+        background-color: rgba(255, 250, 250, 0.85); /* Light snow semi transparent background */
+        color: #2F4F4F; /* Dark slate gray text color */
+    }
+</style>
+<!-- html tags -->
+ <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="tags">HTML TAGS</h2>
+<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; padding: 50px;">
+    <div class="block" style="background: linear-gradient(135deg, #6a11cb, #2575fc); border-radius: 20px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div class="tag">&lt;h1&gt;Heading 1&lt;/h1&gt;</div>
+        <div class="tag">&lt;p&gt;Paragraph&lt;/p&gt;</div>
+        <div class="tag">&lt;a href="#"&gt;Link&lt;/a&gt;</div>
+        <div class="tag">&lt;img src="image.jpg" alt="Image"&gt;</div>
+        <div class="tag">&lt;ul&gt;&lt;li&gt;List item 1&lt;/li&gt;&lt;/ul&gt;</div>
+        <div class="tag">&lt;ol&gt;&lt;li&gt;List item 1&lt;/li&gt;&lt;/ol&gt;</div>
+        <div class="tag">&lt;table&gt;&lt;tr&gt;&lt;td&gt;Table data&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</div>
+        <div class="tag">&lt;form action="#" method="post"&gt;&lt;input type="text" name="name"&gt;&lt;/form&gt;</div>
+        <div class="tag">&lt;div&gt;Division&lt;/div&gt;</div>
+        <div class="tag">&lt;span&gt;Span&lt;/span&gt;</div>
+        <div class="tag">&lt;h2&gt;Heading 2&lt;/h2&gt;</div>
+        <div class="tag">&lt;strong&gt;Strong text&lt;/strong&gt;</div>
+        <div class="tag">&lt;em&gt;Emphasized text&lt;/em&gt;</div>
+        <div class="tag">&lt;input type="checkbox" name="checkbox"&gt; Checkbox</div>
+        <div class="tag">&lt;textarea rows="4" cols="40"&gt;&lt;/textarea&gt;</div>
+        <div class="tag">&lt;button&gt;Button&lt;/button&gt;</div>
+        <div class="tag">&lt;iframe src="https://www.example.com"&gt;&lt;/iframe&gt;</div>
+        <div class="tag">&lt;label for="input"&gt;Label&lt;/label&gt;</div>
+        <div class="tag">&lt;header&gt;Header&lt;/header&gt;</div>
+        <div class="tag">&lt;footer&gt;Footer&lt;/footer&gt;</div>
+        <div class="tag">&lt;nav&gt;Navigation&lt;/nav&gt;</div>
+        <div class="tag">&lt;section&gt;Section&lt;/section&gt;</div>
+        <div class="tag">&lt;article&gt;Article&lt;/article&gt;</div>
+        <div class="tag">&lt;aside&gt;Aside&lt;/aside&gt;</div>
+        <div class="tag">&lt;main&gt;Main content&lt;/main&gt;</div>
+        <div class="tag">&lt;details&gt;&lt;summary&gt;Details&lt;/summary&gt;&lt;p&gt;Details content&lt;/p&gt;&lt;/details&gt;</div>
+        <div class="tag">&lt;abbr title="Abbreviation"&gt;ABBR&lt;/abbr&gt;</div>
+        <div class="tag">&lt;blockquote&gt;Blockquote&lt;/blockquote&gt;</div>
+        <div class="tag">&lt;code&gt;Code&lt;/code&gt;</div>
+        <div class="tag">&lt;time datetime="2023-07-01"&gt;July 1, 2023&lt;/time&gt;</div>
+        <div class="tag">&lt;cite&gt;Citation&lt;/cite&gt;</div>
+        <div class="tag">&lt;del&gt;Deleted text&lt;/del&gt;</div>
+        <div class="tag">&lt;ins&gt;Inserted text&lt;/ins&gt;</div>
+        <div class="tag">&lt;mark&gt;Highlighted text&lt;/mark&gt;</div>
+        <div class="tag">&lt;s&gt;Strikethrough text&lt;/s&gt;</div>
+        <div class="tag">&lt;u&gt;Underlined text&lt;/u&gt;</div>
+        <div class="tag">&lt;q&gt;Inline quote&lt;/q&gt;</div>
+        <div class="tag">&lt;pre&gt;Preformatted text&lt;/pre&gt;</div>
+        <div class="tag">&lt;small&gt;Small text&lt;/small&gt;</div>
+        <div class="tag">&lt;sub&gt;Subscript&lt;/sub&gt;</div>
+    </div>
+    <div class="block" style="background: linear-gradient(135deg, #ff9966, #ff5e62); border-radius: 20px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div class="tag">&lt;sup&gt;Superscript&lt;/sup&gt;</div>
+        <div class="tag">&lt;b&gt;Bold text&lt;/b&gt;</div>
+        <div class="tag">&lt;i&gt;Italic text&lt;/i&gt;</div>
+        <div class="tag">&lt;hr&gt;Horizontal rule&lt;/hr&gt;</div>
+        <div class="tag">&lt;fieldset&gt;&lt;legend&gt;Fieldset&lt;/legend&gt;&lt;input type="text"&gt;&lt;/fieldset&gt;</div>
+        <div class="tag">&lt;optgroup label="Group"&gt;&lt;option&gt;Option&lt;/option&gt;&lt;/optgroup&gt;</div>
+        <div class="tag">&lt;select&gt;&lt;option&gt;Option&lt;/option&gt;&lt;/select&gt;</div>
+        <div class="tag">&lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;</div>
+        <div class="tag">&lt;meter value="4" min="0" max="10"&gt;4 out of 10&lt;/meter&gt;</div>
+        <div class="tag">&lt;figcaption&gt;Figure caption&lt;/figcaption&gt;</div>
+        <div class="tag">&lt;figure&gt;&lt;img src="image.jpg" alt="Image"&gt;&lt;br>figcaption&gt;Caption&lt;/figcaption&gt;&lt;/figure&gt;</div>
+        <div class="tag">&lt;picture&gt;&lt;source srcset="image.webp" type="image/webp"&gt;&lt;br>img src="image.jpg" alt="Image"&gt;&lt;/picture&gt;</div>
+        <div class="tag">&lt;dialog open&gt;Dialog&lt;/dialog&gt;</div>
+        <div class="tag">&lt;template&gt;&lt;p&gt;Template content&lt;/p&gt;&lt;/template&gt;</div>
+        <div class="tag">&lt;slot&gt;Slot content&lt;/slot&gt;</div>
+        <div class="tag">&lt;script&gt;console.log('Script')&lt;/script&gt;</div>
+        <div class="tag">&lt;style&gt;body { background-color: #f0f0f0; }&lt;/style&gt;</div>
+        <div class="tag">&lt;meta charset="UTF-8"&gt;</div>
+        <div class="tag">&lt;base href="https://www.example.com/"&gt;</div>
+        <div class="tag">&lt;title&gt;Page title&lt;/title&gt;</div>
+        <div class="tag">&lt;link rel="stylesheet" href="styles.css"&gt;</div>
+        <div class="tag">&lt;meta name="description" content="Page description"&gt;</div>
+        <div class="tag">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</div>
+        <div class="tag">&lt;!-- Comment --&gt;</div>
+        <div class="tag">&lt;!DOCTYPE html&gt;</div>
+        <div class="tag">&lt;html lang="en"&gt;&lt;/html&gt;</div>
+        <div class="tag">&lt;head&gt;&lt;/head&gt;</div>
+        <div class="tag">&lt;body&gt;&lt;/body&gt;</div>
+        <div class="tag">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;</div>
+        <div class="tag">&lt;audio controls&gt;&lt;source src="audio.mp3" type="audio/mpeg"&gt;&lt;/audio&gt;</div>
+        <div class="tag">&lt;video controls&gt;&lt;source src="video.mp4" type="video/mp4"&gt;&lt;/video&gt;</div>
+        <div class="tag">&lt;canvas&gt;&lt;/canvas&gt;</div>
+        <div class="tag">&lt;svg width="100" height="100"&gt;&lt;br> circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /&gt;&lt;/svg&gt;</div>
+        <div class="tag">&lt;embed src="file.pdf" type="application/pdf"&gt;</div>
+        <div class="tag">&lt;object data="file.pdf" type="application/pdf"&gt;&lt;/object&gt;</div>
+        <div class="tag">&lt;param name="autoplay" value="true"&gt;</div>
+        <div class="tag">&lt;wbr&gt;</div>
+        <div class="tag">&lt;bdo dir="rtl"&gt;This text will go right-to-left.&lt;/bdo&gt;</div>
+        <div class="tag">&lt;kbd&gt;Ctrl + C&lt;/kbd&gt;</div>
+        <div class="tag">&lt;output name="result"&gt;42&lt;/output&gt;</div>
+        <div class="tag">&lt;datalist id="browsers"&gt;&lt;option value="Chrome"&gt;&lt;/datalist&gt;</div>
+        <div class="tag">&lt;fieldset&gt;&lt;legend&gt;Personal Information&lt; <br>/legend&gt;&lt;label for="name"&gt;<br>Name:&lt;/label&gt;&lt;input type="text" id="name" name="name"&gt;&lt;/fieldset&gt;</div>
+    </div>
+</div>
+
+<style>
+    .block {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: white;
+        text-align: center;
+    }
+
+    .tag {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 10px;
+        border-radius: 5px;
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+    }
+
+    .tag:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+</style>
+<!-- FORMS -->
+  <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="form">FORMS</h2>
+  <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+ <form action="">
+      <fieldset style="background-color: aqua">
+        <legend>REGISTRATION FORM</legend>
+        <label for="first name" id="first name">FIRST NAME</label>
+        <input placeholder="enter first name" type="text" name="first name" id="first name" required /> <br />
+        <br />
+        <label for="last name">LAST NAME</label>
+        <input placeholder="enter last name" type="text" name="last name" id="last name" required /><br /><br />
+        <label for="">DOB</label>
+        <input type="date" name="" id="" required /><br />
+        <br />
+        <label for="">EMAIL</label>
+        <input placeholder="enter email" type="email" required /> <br /><br />
+        <label for="">CONTACT</label>
+        <input type="tel" name="" id="" required/><br /><br />
+        <label for="">GENDER</label>
+        <select name="" id="GENDER">
+          <option value="0">select</option>
+          <option value="MALE">MALE</option>
+          <option value="FEMALE">FEMALE</option>
+           </select>
+        <br /><br />
+         <label for="">AGE</label> 
+        <input  min="18" max="50" step="4" type="number"> <br><br>
+          <label for="">ADDRESS</label>
+          <textarea name="" id="" cols="20" rows="4"></textarea> <br><br>
+         <label for="city">CITY</label>
+         <input placeholder="enter your city" type="text" name="" id=""> <br><br>
+         <label for="state">STATE</label>
+         <input placeholder="enter your state" type="text" name="" id=""> <br><br>
+       
+        <label for="">LANGUAGE</label>
+        <input type="checkbox" name="" id="" /> TELUGU
+        <input type="checkbox" name="" id="" /> English
+        <input type="checkbox" /> Hindi <br /><br />
+       
+        <label for="education">Education:</label>
+<select id="education">
+    <option value="" selected disabled>Select</option>
+    <option value="BTECH">BTECH</option>
+    <option value="BSC">BSC</option>
+    <option value="PHARMACY">PHARMACY</option>
+</select> <br> <br>
+
+<label for="course">Course:</label>
+<select id="course">
+    <option value="" selected disabled>Select Course</option>
+</select>
+
+<script>
+    const educationSelect = document.getElementById('education');
+    const courseSelect = document.getElementById('course');
+
+    const courses = {
+        BTECH: ['CSE', 'EEE', 'ECE', 'MECHANICAL', 'CIVIL' ,'CSE AI/ML','IT','AERONOTICAL','CSE DATA SCIENCE'],
+        BSC: ['Maths', 'Physics', 'Chemistry', 'Science' ,'Zoology','History'],
+        PHARMACY: ['B.Pharm', 'D.Pharm', 'M.Pharm'] //added pharmacy courses
+    };
+
+    educationSelect.addEventListener('change', function() {
+        const selectedEducation = this.value;
+        courseSelect.innerHTML = '<option value="" selected disabled>Select Course</option>'; // Reset course options
+
+        if (courses[selectedEducation]) {
+            courses[selectedEducation].forEach(course => {
+                const option = document.createElement('option');
+                option.value = course;
+                option.textContent = course;
+                courseSelect.appendChild(option);
+            });
+        }
+    });
+</script>
+        
+        </select><br /><br />
+
+        <label for="">COURSE INTERESTED</label>
+        <select name="" id="COURSE">
+          <option value="0">select</option>
+          <option value="JAVA">JAVA FULL STACK</option>
+          <option value="PYTHON">PYTHON FULL STACK</option>
+          <option value="aws">AWS </option>
+          <option value="data science"> DATA SCIENCE</option>
+          <option value="devops">DEVOPS</option>
+          <option value="ai">ARTIFICIAL INTELLIGENCE</option>
+           </select>
+        <br /><br />
+
+        <input type="submit"> <br> <br>
+      </fieldset>
+    </form>
+    </div>
+      <style>
+     
+     
+
+        form {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 8px;
+            align-self: center;
+            align-content:center; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #e0f7fa; /* Light blue background for fieldset */
+        }
+
+        legend {
+            font-weight: bold;
+            color: #007bff; /* Blue color for legend */
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="number"],
+        select,
+        textarea {
+            width: calc(100% - 12px); /* Adjust based on padding and border */
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        select {
+            height: 38px; /* Match input height */
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <!-- <div style="width: 100%;">
+    <form action="">
+        <fieldset style="background-color: #f8f8f8; padding: 20px; max-width: 900px; margin: auto; border: 2px solid #007bff; border-radius: 8px;">
+            <legend style="color: #007bff; font-weight: bold;">Registration</legend>
+
+            <div class="form-section" style="margin-bottom: 25px;">
+                <h3 style="color: #333; font-size: 20px; margin-bottom: 15px;">Personal Details</h3>
+                <hr style="border-color: #ddd; margin-bottom: 15px;">
+                <div class="form-row" style="display: flex; flex-wrap: wrap; gap: 20px;">
+                    <label style="flex: 1 1 30%; display: flex; flex-direction: column; font-size: 15px; color: #555;">Full Name
+                        <input type="text" placeholder="Enter your name" style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-top: 5px;">
+                    </label>
+                    <label style="flex: 1 1 30%; display: flex; flex-direction: column; font-size: 15px; color: #555;">Date of Birth
+                        <input type="date" style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-top: 5px;">
+                    </label>
+                    <label style="flex: 1 1 30%; display: flex; flex-direction: column; font-size: 15px; color: #555;">Email
+                        <input type="email" placeholder="Enter your email" style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-top: 5px;">
+                    </label>
+                </div>
+                <div class="form-row" style="display: flex; flex-wrap: wrap; gap: 20px;">
+                    <label style="flex: 1 1 30%; display: flex; flex-direction: column; font-size: 15px; color: #555;">Mobile number
+                        <input type="tel" placeholder="Enter your number" style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-top: 5px;">
+                    </label>
+                    <label style="flex: 1 1 30%; display: flex; flex-direction: column; font-size: 15px; color: #555;">Gender
+                        <input type="text" placeholder="Enter your Gender" style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-top: 5px;">
+                    </label>
+                    <label style="flex: 1 1 30%; display: flex; flex-direction: column; font-size: 15px; color: #555;">Occupation
+                        <input type="text" placeholder="Enter your Occupation" style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-top: 5px;">
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-section" style="margin-bottom: 25px;">
+                <h3 style="color: #333; font-size: 20px; margin-bottom: 15px;">Identity Details</h3>
+                <hr style="border-color: #ddd; margin-bottom: 15px;">
+                <div class="form-row" style="display: flex; flex-wrap: wrap; gap: 20px;">
+                    <label style="flex: 1 1 30%; display: flex; flex-direction: column; font-size: 15px; color: #555;">ID type
+                        <input type="text" placeholder="Enter your ID type" style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-top: 5px;">
+                    </label>
+                    <label style="flex: 1 1 30%; display: flex; flex-direction: column; font-size: 15px; color: #555;">ID number
+                        <input type="text" placeholder="Enter your ID number" style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-top: 5px;">
+                    </label>
+                    <label style="flex: 1 1 30%; display: flex; flex-direction: column; font-size: 15px; color: #555;">Issue Authority
+                        <input type="text" placeholder="Enter your Issue Authority" style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-top: 5px;">
+                    </label>
+                </div>
+                <div class="form-row" style="display: flex; flex-wrap: wrap; gap: 20px;">
+                    <label style="flex: 1 1 30%; display: flex; flex-direction: column; font-size: 15px; color: #555;">Issue Date
+                        <input type="date" style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-top: 5px;">
+                    </label>
+                    <label style="flex: 1 1 30%; display: flex; flex-direction: column; font-size: 15px; color: #555;">Issue State
+                        <input type="text" placeholder="Enter your issued state" style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-top: 5px;">
+                    </label>
+                    <label style="flex: 1 1 30%; display: flex; flex-direction: column; font-size: 15px; color: #555;">Expiry Date
+                        <input type="date" style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-top: 5px;">
+                    </label>
+                </div>
+            </div>
+
+            <input type="button" value="Next →" style="background-color: #007bff; color: white; width: 100%; padding: 12px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer;">
+        </fieldset>
+    </form>
+</div>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .form-row {
+            flex-direction: column;
+        }
+        input[type="button"] {
+            width: 100%;
+        }
+    }
+</style> -->
+<br><br><br>
+<div style="display: flex; justify-content: center; width: 100%;">
+    <div style="border: 2px solid #007bff; border-radius: 10px; padding: 20px; display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; background-color: #f8f8f8; width: 80%; max-width: 800px;">
+
+        <form style="padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 350px;">
+            <h2 style="color: #007bff; text-align: center; margin-bottom: 25px;" id="login">Login</h2>
+            <div style="margin-bottom: 20px;">
+                <label for="login-email" style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Email</label>
+                <input type="email" id="login-email" placeholder="Enter your email" style="width: calc(100% - 20px); padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="login-password" style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Password</label>
+                <input type="password" id="login-password" placeholder="Enter your password" style="width: calc(100% - 20px); padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+            </div>
+            <button type="submit" style="background-color: #007bff; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; width: 100%;">Login</button>
+        </form>
+
+        <form style="padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 350px;">
+            <h2 style="color: #007bff; text-align: center; margin-bottom: 25px;">Signup</h2>
+            <div style="margin-bottom: 20px;">
+                <label for="signup-name" style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Name</label>
+                <input type="text" id="signup-name" placeholder="Enter your name" style="width: calc(100% - 20px); padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="signup-email" style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Email</label>
+                <input type="email" id="signup-email" placeholder="Enter your email" style="width: calc(100% - 20px); padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="signup-password" style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Password</label>
+                <input type="password" id="signup-password" placeholder="Enter your password" style="width: calc(100% - 20px); padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="signup-confirm-password" style="display: block; margin-bottom: 8px; color: #333; font-weight: bold;">Confirm Password</label>
+                <input type="password" id="signup-confirm-password" placeholder="Confirm your password" style="width: calc(100% - 20px); padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+            </div>
+            <button type="submit" style="background-color: #007bff; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; width: 100%;">Signup</button>
+            <p style="text-align: center; margin-top: 15px; font-size: 14px;">
+                Already have an account? <a href="#login" onclick="showLoginForm()" style="color: #007bff; text-decoration: none;">Login</a>
+            </p>
+        </form>
+
+    </div>
+</div>
+
+<style>
+    /* Styling from above tags */
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    button[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<script>
+    function showLoginForm() {
+        // Simple client side redirection.
+        // In a real application, you would manage form visibility using JavaScript.
+        window.location.href = "#login"
+    }
+</script>
+
+<!-- emojies -->
+ <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="es">ENTITIES AND SYMBOLS</h2>
+<div style="display: flex; padding: 50px; flex-wrap: wrap; justify-content: center;">
+
+    <div style="height: 400px; width: 120px; font-size: 18px; margin: 15px; background: linear-gradient(to right, #3ac566, #c07b42, #007bff); border-radius: 10px; text-align: center; color: white; display: flex; flex-direction: column; justify-content: center;">
+        <p style="font-size: 1.2em; margin: 0;">
+            &lt;<br>
+            &gt;<br>
+            &amp;<br>
+            &quot;<br>
+            &apos;<br>
+            &cent;<br>
+            &pound;<br>
+            &yen;<br>
+            &euro;<br>
+            &copy;<br>
+            &reg;
+        </p>
+    </div>
+
+    <div style="height: 400px; width: 120px; font-size: 18px; margin: 15px; background: linear-gradient(to right, #3ac566, #c07b42, #007bff); border-radius: 10px; text-align: center; color: white; display: flex; flex-direction: column; justify-content: center;">
+        <p style="font-size: 1.2em; margin: 0;">
+            &amalg;<br>
+            &#230;<br>
+            &#8289;<br>
+            &#120068;<br>
+            &#120094;<br>
+            &#192;<br>
+            &#224;<br>
+            &#256;<br>
+            &#257;<br>
+            &and;<br>
+            &And;
+        </p>
+    </div>
+
+    <div style="height: 400px; width: 120px; font-size: 18px; margin: 15px; background: linear-gradient(to right, #3ac566, #c07b42, #007bff); border-radius: 10px; text-align: center; color: white; display: flex; flex-direction: column; justify-content: center;">
+        <p style="font-size: 1.2em; margin: 0;">
+            &andand;<br>
+            &andd;<br>
+            &ang;<br>
+            &ange;<br>
+            &angle;<br>
+            &angmsd;<br>
+            &angmsdaa;<br>
+            &angmsdab;<br>
+            &angmsdac;<br>
+            &angmsdad;
+        </p>
+    </div>
+
+    <div style="height: 400px; width: 120px; font-size: 18px; margin: 15px; background: linear-gradient(to right, #3ac566, #c07b42, #007bff); border-radius: 10px; text-align: center; color: white; display: flex; flex-direction: column; justify-content: center;">
+        <p style="font-size: 1.2em; margin: 0;">
+            &#258;<br>
+            &#259;<br>
+            &#8766;<br>
+            &#8767;<br>
+            &acE;<br>
+            &#192;<br>
+            &#226;<br>
+            &#180;<br>
+            &#1040;<br>
+            &#1072;
+        </p>
+    </div>
+
+    <div style="height: 400px; width: 120px; font-size: 18px; margin: 15px; background: linear-gradient(to right, #3ac566, #c07b42, #007bff); border-radius: 10px; text-align: center; color: white; display: flex; flex-direction: column; justify-content: center;">
+        <p style="font-size: 1.2em; margin: 0;">
+            &forall;<br>
+            &part;<br>
+            &exist;<br>
+            &empty;<br>
+            &nabla;<br>
+            &isin;<br>
+            &notin;<br>
+            &ni;<br>
+            &prod;<br>
+            &sum;
+        </p>
+    </div>
+
+    <div style="height: 400px; width: 120px; font-size: 18px; margin: 15px; background: linear-gradient(to right, #3ac566, #c07b42, #007bff); border-radius: 10px; text-align: center; color: white; display: flex; flex-direction: column; justify-content: center;">
+        <p style="font-size: 1.2em; margin: 0;">
+            &copy;<br>
+            &reg;<br>
+            &euro;<br>
+            &trade;<br>
+            &larr;<br>
+            &uarr;<br>
+            &rarr;<br>
+            &darr;<br>
+            &spades;<br>
+            &clubs;<br>
+            &hearts;<br>
+            &diams;
+        </p>
+    </div>
+
+    <div style="height: 400px; width: 120px; font-size: 18px; margin: 15px; background: linear-gradient(to right, #3ac566, #c07b42, #007bff); border-radius: 10px; text-align: center; color: white; display: flex; flex-direction: column; justify-content: center;">
+        <p style="font-size: 1.2em; margin: 0;">
+            &Aring;<br>
+            &aring;<br>
+            &ascr;<br>
+            &Ascr;<br>
+            &Assign;<br>
+            &ast;<br>
+            &asymp;<br>
+            &asympeq;<br>
+            &Atilde;<br>
+            &atilde;
+        </p>
+    </div>
+
+    <div style="height: 400px; width: 120px; font-size: 18px; margin: 15px; background: linear-gradient(to right, #3ac566, #c07b42, #007bff); border-radius: 10px; text-align: center; color: white; display: flex; flex-direction: column; justify-content: center;">
+        <p style="font-size: 1.2em; margin: 0;">
+            &Auml;<br>
+            &auml;<br>
+            &awconint;<br>
+            &awint;<br>
+            &backepsilon;<br>
+            &backprime;<br>
+            &backsimeq;<br>
+            &Backslash;<br>
+            &Barv;<br>
+            &beta;
+        </p>
+    </div>
+
+    <div style="height: 400px; width: 120px; font-size: 18px; margin: 15px; background: linear-gradient(to right, #3ac566, #c07b42, #007bff); border-radius: 10px; text-align: center; color: white; display: flex; flex-direction: column; justify-content: center;">
+        <p style="font-size: 1.2em; margin: 0;">
+            &bemptyv;<br>
+            &because;<br>
+            &bigcap;<br>
+            &bigcup;<br>
+            &bigodot;<br>
+            &bigstar;<br>
+            &bigtriangledown;<br>
+            &bigtriangleup;<br>
+            &bigvee;<br>
+            &blacklozenge;
+        </p>
+    </div>
+
+    <div style="height: 400px; width: 120px; font-size: 18px; margin: 15px; background: linear-gradient(to right, #3ac566, #c07b42, #007bff); border-radius:10px; text-align: center; color: white; display: flex; flex-direction: column; justify-content: center;">
+<p style="font-size: 1.2em; margin: 0;">
+&Cconint;<br>
+&blk12;<br>
+&bullet;<br>
+&block;<br>
+&bot;<br>
+&ast;<br>
+&boxVL;<br>
+&bullet;<br>
+&boxvL;<br>
+&caret;
+</p>
+</div>
+
+</div>
+
+<style>
+/* General styles from previous examples */
+h2 {
+font-family: Arial, sans-serif;
+color: #333;
+}
+</style>
+
+<!-- emojies -->
+   <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="emo">EMOJIES</h2>
+    <div style="display: flex;flex-wrap:wrap; width: 100%; ">
+        <div style="height: 450px; width: 130px;font-size:21px; margin:20px; background: linear-gradient(to right,rgba(221, 175, 59, 0.676),rgba(220, 61, 127, 0.712),rgba(54, 219, 221, 0.676));border-radius: 500px;text-align : center ;">
+            <p>&#128512;</p>
+            <p>&#128513;</p>
+            <p>&#128514;</p>
+            <p>&#128515;</p>
+            <p>&#128516;</p>
+            <p>&#128517;</p>
+            <p>&#128518;</p>
+            <p>&#128519;</p>
+            <p>&#128520;</p>
+            
+          </div>
+          
+        <div style="height: 450px;width: 130px;font-size:21px; margin:20px;background: linear-gradient(to right,rgba(221, 175, 59, 0.676),rgba(220, 61, 127, 0.712),rgba(54, 219, 221, 0.676)) ;border-radius: 500px;text-align: center ">
+            <p>&#128522;</p>
+            <p>&#128523;</p>
+            <p>&#128524;</p>
+            <p>&#128525;</p>
+            <p>&#128526;</p>
+            <p>&#128527;</p>
+            <p>&#128528;</p>
+            <p>&#128529;</p>
+            <p>&#128530;</p>
+           
+            
+       
+          
+          
+        </div>
+        <div style="height: 450px;width: 130px;font-size:21px; margin:20px;background: linear-gradient(to right,rgba(221, 175, 59, 0.676),rgba(220, 61, 127, 0.712),rgba(54, 219, 221, 0.676));border-radius: 500px;text-align: center ">
+            <p>&#128521;</p>
+            <p>&#128533;</p>
+            <p>&#128534;</p>
+            <p>&#128535;</p>
+            <p>&#128536;</p>
+            <p>&#128537;</p>
+            <p>&#128538;</p>
+            <p>&#128539;</p>
+            <p>&#128540;</p>
+           
+
+        </div>
+        <div   style="height: 450px;width: 130px;font-size:21px; margin:20px;background: linear-gradient(to right,rgba(221, 175, 59, 0.676),rgba(220, 61, 127, 0.712),rgba(54, 219, 221, 0.676)); border-radius: 500px;text-align: center">
+           
+            <p>&#128542;</p>
+            <p>&#128543;</p>
+            <p>&#128544;</p>
+            <p>&#128545;</p>
+            <p>&#128546;</p>
+            <p>&#128547;</p>
+            <p>&#128548;</p>
+            <p>&#128549;</p>
+            <p>&#128550;</p>
+            
+
+
+
+        </div>
+        <div  style="height: 450px;width: 130px;font-size:21px; margin:20px;background: linear-gradient(to right,rgba(221, 175, 59, 0.676),rgba(220, 61, 127, 0.712),rgba(54, 219, 221, 0.676));border-radius: 500px;text-align: center ">
+           
+            <p>&#128552;</p>
+            <p>&#128553;</p>
+            <p>&#128554;</p>
+            <p>&#128555;</p>
+            <p>&#128556;</p>
+            <p>&#128557;</p>
+            <p>&#128558;</p>
+            <p>&#128559;</p>
+            <p>&#128560;</p>
+            
+          
+        </div>
+        <div style="height: 450px;width: 130px;font-size:21px; margin:20px;background: linear-gradient(to right,rgba(221, 175, 59, 0.676),rgba(220, 61, 127, 0.712),rgba(54, 219, 221, 0.676)); border-radius: 500px;text-align: center;">
+           
+            <p>&#128405;</p>
+            <p>&#128073;</p>
+            <p>&#128072;</p>
+            <p>&#128071;</p>
+            <p>&#128070;</p>
+            <p>&#9994;</p>
+            <p>&#128074;</p>
+            <p>&#128077;</p>
+            <p>&#128078;</p>
+           
+       
+        </div> 
+        <div  style="height: 450px;width: 130px;font-size:21px; margin:20px;background: linear-gradient(to right,rgba(221, 175, 59, 0.676),rgba(220, 61, 127, 0.712),rgba(54, 219, 221, 0.676));border-radius: 500px;text-align: center ">
+           
+            <p>&#9757;</p>
+            <p>&#129306;</p>
+            <p>&#128406;</p>
+            <p>&#128400;</p>
+            <p>&#128075;</p>
+            <p>&#19995;</p>
+            <p>&#128127;</p>
+            <p>&#128128;</p>
+            <p>&#128127;</p>
+            
+        </div>
+        <div style="height: 450px;width: 130px;font-size:21px; margin:20px;background: linear-gradient(to right,rgba(221, 175, 59, 0.676),rgba(220, 61, 127, 0.712),rgba(54, 219, 221, 0.676)); border-radius: 500px;text-align: center;">
+           
+            <p>&#128186;</p>
+            <p>&#128187;</p>
+            <p>&#128188;</p>
+            <p>&#128189;</p>
+            <p>&#128190;</p>
+            <p>&#128200;</p>
+            <p>&#128201;</p>
+            <p>&#128202;</p>
+            <p>&#128383;</p>
+           
+           
+        
+        
+        </div>
+        <div  style="height: 450px;width: 130px;font-size:21px; margin:20px;background: linear-gradient(to right,rgba(221, 175, 59, 0.676),rgba(220, 61, 127, 0.712),rgba(54, 219, 221, 0.676));border-radius: 500px;text-align: center ">
+           
+            <p>&#128640;</p>
+            <p>&#128641;</p>
+            <p>&#128684;</p>
+            <p>&#128647;</p>
+            <p>&#128657;</p>
+            <p>&#128661;</p>
+            <p>&#128677;</p>
+            <p>&#128679;</p>
+            <p>&#128689;</p>
+            
+           
+          
+        </div>
+        <div style="height: 450px;width: 130px;font-size:21px; margin:20px;background: linear-gradient(to right,rgba(221, 175, 59, 0.676),rgba(220, 61, 127, 0.712),rgba(54, 219, 221, 0.676)); border-radius: 500px;text-align: center;">
+           
+            <p>&#128110;</p>
+            <p>&#128111;</p>
+            <p>&#128143;</p>
+            <p>&#128145;</p>
+            <p>&#128141;</p>
+            <p>&#128142;</p>
+            <p>&#128164;</p>
+            <p>&#128769;</p>
+            <p>&#128171;</p>
+          
+            
+        
+        
+        </div>
+       
+        
+        
+      </div></div><br>&nbsp;
+    
+
+      <!-- IFRAMES -->
+
+       <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="frame">IFRAMES</h2>
+       <!-- <div style="display: flex; flex-wrap:wrap; width: 100%; justify-content:center; ">*/ -->
+<a target="blank" href="https://saaneyaswanthkumar.netlify.app"><h1 style="font-size: large; text-align:center;">PORTFOLIO</h1></a>  <br><br> <br>
+<h4 style="text-align: center;">click on above link to see website in below frame</h4>
+ <iframe src="background.html" name="blank" style=" width: 1000px; height:1000px; padding:20px;" frameborder="0"></iframe> <br> <br>
+      
+  <!-- AUDIO TAG-->
+     <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="audio">AUDIO</h2>
+       
+   
+    <h2>Song</h2>
+    <div style="border:1px solid red; border-radius:20px; padding:20px; text-align:center; align-items:center;">
+    <audio src="ram theme.mp3" controls></audio></div>
+<!-- VIDEO -->
+     <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="video">VIDEO</h2>
+ <h2>Video</h2>
+ <div style="border: 1px solid red; border-radius:50px;  padding:20px; text-align:center;align-items:center;"><center>
+ <video src="rabbit.mp4" controls style="height: 400px; width: 400px;"></center> </video>
+</div>
+       
+<!-- SVG -->
+       <div>
+            <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="svg">SVG</h2>
+      
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+          <!-- First SVG (Star) -->
+          <div style="flex: 1; max-width: 500px;">
+            <svg width="100%" height="auto" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="100,10 120,75 180,75 130,110 150,170 100,135 50,170 70,110 20,75 80,75" 
+                       fill="#f39c12" stroke="#e67e22" stroke-width="5"/>
+            </svg>
+          </div>
+      
+          <!-- Second SVG (Circles) -->
+          <div style="flex: 1; max-width: 500px;">
+            <svg width="100%" height="auto" viewBox="0 0 500 500">
+              <!-- Larger circle -->
+              <circle cx="250" cy="250" r="200" fill="blue" />
+              <!-- Smaller circle inside the larger circle -->
+              <circle cx="250" cy="250" r="100" fill="lightblue" />
+            </svg>
+          </div>
+      
+          <!-- Third SVG (Cone) -->
+          <div style="flex: 1; max-width: 500px;">
+            <svg width="100%" height="auto" viewBox="0 0 200 200">
+              <!-- Cone body -->
+              <polygon points="100,20 150,180 50,180" fill="orange" stroke="black" stroke-width="2" />
+              <!-- Cone base (ellipse) -->
+              <ellipse cx="100" cy="180" rx="50" ry="10" fill="brown" stroke="black" stroke-width="2" />
+            </svg>
+          </div>
+        </div>
+      </div>
+       
+      <!-- convas -->
+       
+      <h2 style="text-decoration: none; color: #FFD700; font-size: 2.5em; margin-top: 80px; padding: 25px; background: linear-gradient(135deg, #1E90FF, #800080); border-radius: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); font-family: 'Times New Roman', serif; text-align: center; letter-spacing: 1px; border: 2px solid #FFA500; margin-bottom: 50px;" id="canva">CANVAS</h2><canvas id="myCanvas" style="width: 100%; height: auto;"></canvas>
+        <script>
+            // Get the canvas element
+            const canvas = document.getElementById('myCanvas');
+            // Get the context of the canvas
+            const ctx = canvas.getContext('2d');
+        
+            // Set the canvas width and height based on its container
+            function resizeCanvas() {
+                const width = canvas.clientWidth;
+                canvas.width = width;  // Update canvas width
+                canvas.height = width;  // Maintain a 1:1 aspect ratio
+        
+                // Redraw everything after resizing
+                drawShapes();
+            }
+        
+            
+            function drawShapes() {
+                const width = canvas.width;
+                const height = canvas.height;
+        
+                ctx.clearRect(0, 0, width, height);
+        
+               
+                ctx.fillStyle = 'lightblue';
+                ctx.fillRect(width * 0.1, height * 0.1, width * 0.3, height * 0.2);
+        
+               
+                ctx.beginPath();
+                ctx.moveTo(width * 0.1, height * 0.4);
+                ctx.lineTo(width * 0.4, height * 0.7);
+                ctx.strokeStyle = 'red';
+                ctx.lineWidth = 5 * (width / 500);
+                ctx.stroke();
+        
+              
+                ctx.beginPath();
+                ctx.arc(width * 0.7, height * 0.3, width * 0.15, 0, 2 * Math.PI);
+                ctx.fillStyle = 'blue';
+                ctx.fill();
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 2 * (width / 500); 
+                ctx.stroke();
+            }
+        
+           
+            resizeCanvas();
+        
+           
+            window.addEventListener('resize', resizeCanvas);
+        </script>
+        
+        <br>  
+        <!------------------footer---------->
+        
+         <div class="last-text">
+         <p>Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script> Saane
+            Yaswanth Kumar All Rights Reserved
+        </p>
+        </div>
+         <a href="#" class="top"><i class='bx bxs-up-arrow-alt'></i></a>
+    <script src="script.js"></script>
+
+</body>
+</html>
